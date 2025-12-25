@@ -192,19 +192,13 @@ footer { margin-top: auto; }
   justify-content: center;
   align-items: center;
 }
-#myVideo {
+#myVideo, #myVideo2, #myVideo3, #myVideo4 {
   width: 100%;
   border-radius: 15px;
   display: block;
   object-fit: cover;
 }
 
-#myVideo2 {
-  width: 100%;
-  border-radius: 15px;
-  display: block;
-  object-fit: cover;
-}
 
 /* Center Button */
 .center-btn {
@@ -242,7 +236,7 @@ footer { margin-top: auto; }
 }
 
 /* Progress Bar */
-#progressBar, #progressBar2 {
+#progressBar, #progressBar2, #progressBar3, #progressBar4 {
   -webkit-appearance: none;
   flex: 1;
   max-width: 100%;
@@ -274,6 +268,28 @@ footer { margin-top: auto; }
   margin-top: -4px;
 }
 
+#progressBar3::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: 2px solid var(--pink-400);
+  margin-top: -4px;
+}
+
+#progressBar4::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: 2px solid var(--pink-400);
+  margin-top: -4px;
+}
+
 @media (max-width: 768px) {
   .controls {
     flex-wrap: nowrap;        /* نخليهم جنب بعض */
@@ -295,7 +311,7 @@ footer { margin-top: auto; }
   }
 
   /* شريط التقدم */
-  #progressBar, #progressBar2 {
+  #progressBar, #progressBar2, #progressBar3, #progressBar4 {
     flex: 1;                   /* يتمدد بس داخل الفيديو */
     height: 4px;
     min-width: 0;              /* يمنع الشريط من الخروج برا */
@@ -314,7 +330,7 @@ footer { margin-top: auto; }
 
 /* Fullscreen tweaks */
 :fullscreen .controls { padding: 1.2rem; gap: 0.8rem; }
-:fullscreen #progressBar { flex: 1.5; height: 6px; margin: 0 0.6rem; }
+:fullscreen #progressBar, #progressBar2, #progressBar3, #progressBar4 { flex: 1.5; height: 6px; margin: 0 0.6rem; }
 
 /* Buttons and select */
 .controls .buttons button, .controls .buttons select {
